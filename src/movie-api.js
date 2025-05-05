@@ -4,7 +4,7 @@ axios.defaults.baseURL = 'https://api.themoviedb.org';
 axios.defaults.headers = {
   accept: 'application/json',
   Authorization:
-    'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOTVkMzEyNjM4YmYyOTQ4M2U5ZjE2MzNjNDM2YjNmMCIsIm5iZiI6MTc0NDM3NjQ1MC4wODUsInN1YiI6IjY3ZjkxMjgyMWJjNjM5NTY2YWRhMTcyZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.u_1gyuYKDvuU1nJhPQ1PjlvNYXCMFOVVP61ddABZo40',
+    'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYjk1ZjZlYjZjMWQyYzk0ZDA3N2U4MGY0MjJiYmJiOSIsIm5iZiI6MTc0NjM2OTYzNS4zMzYsInN1YiI6IjY4MTc3YzYzYWE2M2Y2MWI2ZTAzMTZhOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HTDY8AoJU79m0hreSlDQEpF1IBvQdwZ8EJsFbk9QJj0',
 };
 
 export const getTrendingMovies = async (page) => {
