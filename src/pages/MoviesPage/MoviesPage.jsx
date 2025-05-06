@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { SearchBox } from '../../components/SearchBox/SearchBox';
-import MoviesList from '../../components/MoviesList/MoviesList';
+import MovieList from '../../components/MovieList/MovieList';
 import Loader from '../../components/Loader/Loader';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import Pagination from '../../components/Pagination/Pagination';
@@ -74,7 +74,7 @@ const MoviesPage = () => {
     <div>
       <SearchBox onChange={(value) => updateSearchParams('query', value)} />
       {isLoading && <Loader />}
-      {!isLoading && !error && <MoviesList movies={movies} />}
+      {!isLoading && !error && <MovieList movies={movies} />}
       {error && <ErrorMessage />}
       {movies.length !== 0 && totalPages > 1 && !isLoading && !error && (
         <Pagination
