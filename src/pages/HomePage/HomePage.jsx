@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import Pagination from '../../components/Pagination/Pagination';
 import Loader from '../../components/Loader/Loader';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-import MoviesList from '../../components/MoviesList/MoviesList';
+import MovieList from '../../components/MovieList/MovieList';
 import { getTrendingMovies } from '../../movie-api';
 
 const HomePage = () => {
@@ -45,7 +45,7 @@ const HomePage = () => {
   return (
     <main>
       {isLoading && <Loader />}
-      {movies && <MoviesList movies={movies} />}
+      {movies && <MovieList movies={movies} />}
       {error && <ErrorMessage />}
       {!isLoading && (
         <Pagination
